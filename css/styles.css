@@ -379,6 +379,16 @@ Top
   font-size: 1rem;
 }
 
+.top-info a {
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.top-info a:hover {
+  color: var(--clr-primary-1);
+  transition: var(--transition);
+}
+
 @media screen and (min-width: 800px) {
   .top-info p {
     font-size: 1.5rem;
@@ -463,24 +473,24 @@ Portfolio
 ===============
 */
 
-.portfolio {
+.works {
   background: var(--clr-white);
 }
 
-.portfoliio-text {
+.works-text {
   width: 85vw;
   max-width: 30rem;
   margin: 0 auto;
 }
 
-.case-study {
+.single-work {
   transition: var(--transition);
   height: 20rem;
   position: relative;
   perspective: 15000px;
 }
 
-.case-study-side {
+.single-work-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -492,7 +502,7 @@ Portfolio
   visibility: visible;
 }
 
-.case-study-info {
+.single-work-info {
   background: var(--clr-grey-10);
   padding: 1rem 1.5rem;
   transition: all 0.2s linear;
@@ -500,11 +510,11 @@ Portfolio
   border-bottom-right-radius: var(--radius);
 }
 
-.case-study a {
+.single-work a {
   color: var(--clr-grey-1);
 }
 
-.case-study-front img {
+.single-work img {
   height: 13rem;
   -o-object-fit: cover;
   object-fit: cover;
@@ -514,18 +524,18 @@ Portfolio
   border-top-right-radius: var(--radius);
 }
 
-.case-study:hover {
+.single-work:hover {
   transform: scale(1.025);
 }
 
-.portfolio-container {
+.works-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 3rem 1rem;
 }
 
 @media screen and (min-width: 588px) {
-  .portfolio .underline {
+  .works .underline {
     width: 25rem;
   }
 }
@@ -564,7 +574,7 @@ Footer
 }
 /*
 =============== 
-Single Page
+Case Study Page
 ===============
 */
 
@@ -575,14 +585,4 @@ Single Page
 
 .page-info {
   max-width: 700px;
-}
-
-.top-info a {
-  color: var(--clr-primary-5);
-  transition: var(--transition);
-}
-
-.top-info a:hover {
-  color: var(--clr-primary-1);
-  transition: var(--transition);
 }
