@@ -156,6 +156,7 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
+
 /* section */
 .section {
   padding: 2rem 0 5rem;
@@ -186,12 +187,6 @@ p {
   margin-bottom: 3rem;
   text-align: center;
 }
-
-.bg-grey {
-  background: var(--clr-grey-10);
-}
-
-/* added during recording */
 
 /*
 =============== 
@@ -488,18 +483,6 @@ Portfolio
   height: 20rem;
   position: relative;
   perspective: 15000px;
-}
-
-.single-work-side {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-radius: var(--radius);
-  /* apparently these are needed for iPhone? idfk */
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  visibility: visible;
 }
 
 .single-work-info {
