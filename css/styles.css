@@ -159,7 +159,7 @@ p {
 
 /* section */
 .section {
-  padding: 2rem 0 5rem;
+  padding: 2rem 0 4rem;
 }
 
 .section-container {
@@ -473,7 +473,7 @@ Portfolio
 
 .single-work {
   transition: var(--transition);
-  height: 20rem;
+  height: auto;
   position: relative;
   perspective: 15000px;
 }
@@ -561,7 +561,7 @@ Case Study Page
 }
 
 .case-study-img {
-  max-width: 75%;
+  max-width: 1024px;
   height: auto;
   display: block;
   margin-left: auto;
@@ -583,7 +583,6 @@ Case Study Page
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-  cursor: zoom-out;
 }
 
 /* Modal Content (image) */
@@ -593,6 +592,16 @@ Case Study Page
   height: 100%;
   width: auto;
   object-fit: contain;
+  cursor: zoom-in;
+}
+
+.modal-content-extrazoom {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  /* object-fit: contain; */
+  cursor: zoom-out;
 }
 
 @-webkit-keyframes zoom {
