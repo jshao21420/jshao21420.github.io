@@ -1,0 +1,71 @@
+/*
+=============== 
+About
+===============
+*/
+/* section title added to globals */
+
+.about {
+  padding: 2.5rem 0;
+}
+
+.about-photo {
+  max-width: 20rem;
+  max-height: 25rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: var(--radius);
+  /* set as relative, so that the ::before position absolute works */
+  position: relative;
+}
+
+.about-title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.about-title .underline {
+  width: 5rem;
+  margin-left: 0;
+}
+
+/* parent container */
+.about-container {
+  display: grid;
+  gap: 3rem 2rem;
+}
+
+.about-img {
+  justify-self: center;
+}
+
+@media screen and (min-width: 992px) {
+  .about {
+    padding: 2.5rem 0 5rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-img {
+    position: relative;
+  }
+  .about-img::before {
+    /* content is a required field, so we set it as an empty string */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid var(--clr-primary-5);
+    /* used to offset the border, making it #aesthetic */
+    top: 2rem;
+    left: -2rem;
+    border-radius: var(--radius);
+    max-height: 25rem;
+  }
+
+  .about-info {
+    align-self: center;
+  }
+}

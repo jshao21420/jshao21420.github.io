@@ -1,0 +1,186 @@
+/*
+=============== 
+Case Study Page
+===============
+*/
+
+.case-study-header {
+  background: var(--clr-primary-10);
+  padding: 2.5rem 0 2rem;
+}
+
+.case-study-title {
+  max-width: 880px;
+  margin: auto;
+  text-align: center;
+}
+
+.portion {
+  padding: 4rem 0rem 4rem;
+}
+
+.portion-colored {
+  padding: 4rem 0rem 4rem;
+  background: var(--clr-primary-10);
+}
+
+.portion-container {
+  max-width: 1028px;
+}
+
+.portion h3,
+.portion-colored h3 {
+  margin-bottom: 0rem;
+}
+
+.split-section {
+  max-width: 720px;
+}
+
+.subsection-container {
+  margin-top: 3rem;
+}
+
+.subsection-title {
+  color: var(--clr-primary-1);
+  font-weight: bolder;
+}
+
+.split-section-container {
+  display: grid;
+  gap: 0rem 7rem;
+}
+
+.portion p,
+.portion-colored p {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.portion ul,
+.portion-colored ul {
+  margin-left: 1rem;
+  list-style-type: circle;
+}
+
+.single-smaller-img {
+  padding: 1rem 0rem;
+  max-width: 620px;
+  margin: auto;
+}
+
+.portion li,
+.portion-colored li {
+  margin-top: 0.5rem;
+}
+
+.split-image-container {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 1rem 1rem;
+}
+
+.split-image figcaption {
+  color: var(--clr-primary-1);
+  margin: 1rem 0rem 0.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .split-section-container {
+    grid-template-columns: 1.75fr 1fr;
+  }
+  .split-image-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+=============== 
+Modal
+===============
+*/
+
+.case-study-img {
+  max-width: 1024px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+  cursor: zoom-in;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99; /* Sit on top */
+  padding: 2.5rem 0; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  cursor: zoom-in;
+}
+
+.modal-content-extrazoom {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  /* object-fit: contain; */
+  cursor: zoom-out;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(2);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes zoom-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes zoom-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.out {
+  animation-name: zoom-out;
+  animation-duration: 0.6s;
+}

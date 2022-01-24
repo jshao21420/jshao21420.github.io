@@ -4,7 +4,7 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Yantramanav&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Yantramanav:wght@400;700&display=swap");
 
 /*
 =============== 
@@ -381,78 +381,6 @@ Top
 
 /*
 =============== 
-About
-===============
-*/
-/* section title added to globals */
-
-.about {
-  padding: 2.5rem 0;
-}
-
-.about-photo {
-  max-width: 20rem;
-  max-height: 25rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: var(--radius);
-  /* set as relative, so that the ::before position absolute works */
-  position: relative;
-}
-
-.about-title {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
-.about-title .underline {
-  width: 5rem;
-  margin-left: 0;
-}
-
-/* parent container */
-.about-container {
-  display: grid;
-  gap: 3rem 2rem;
-}
-
-.about-img {
-  justify-self: center;
-}
-
-@media screen and (min-width: 992px) {
-  .about {
-    padding: 2.5rem 0 5rem;
-  }
-
-  .about-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .about-img {
-    position: relative;
-  }
-  .about-img::before {
-    /* content is a required field, so we set it as an empty string */
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 0.25rem solid var(--clr-primary-5);
-    /* used to offset the border, making it #aesthetic */
-    top: 2rem;
-    left: -2rem;
-    border-radius: var(--radius);
-    max-height: 25rem;
-  }
-
-  .about-info {
-    align-self: center;
-  }
-}
-
-/*
-=============== 
 Portfolio
 ===============
 */
@@ -547,99 +475,4 @@ Footer
   text-align: center;
   color: var(--clr-primary-5);
   /* text-transform: capitalize; */
-}
-
-/*
-=============== 
-Case Study Page
-===============
-*/
-
-.case-study {
-  /* 100% of the height of the page minus the height of the navbar minus 198px for... some reason */
-  min-height: calc(100vh - 5rem - 198px);
-}
-
-.case-study-img {
-  max-width: 1024px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5rem;
-  cursor: zoom-in;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 99; /* Sit on top */
-  padding: 2.5rem 0; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  cursor: zoom-in;
-}
-
-.modal-content-extrazoom {
-  margin: auto;
-  display: block;
-  width: 100%;
-  height: auto;
-  /* object-fit: contain; */
-  cursor: zoom-out;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(2);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0.4);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@-webkit-keyframes zoom-out {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-@keyframes zoom-out {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-
-.out {
-  animation-name: zoom-out;
-  animation-duration: 0.6s;
 }

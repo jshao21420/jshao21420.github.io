@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../fontawesome-free-5.12.1-web/css/all.min.css" />
   <!-- css -->
   <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/case-study.css">
 </head>
 
 <body>
@@ -84,22 +85,322 @@
   </aside>
   <!-- end of sidebar -->
 
-  <section class="section case-study">
-    <div class="top-info">
+  <header class="case-study-header">
+    <div class="case-study-title">
       <h2>FieldVision: Planning Admin Tool</h2>
       <div class="underline"></div>
     </div>
-    <div id="modal" class="modal">
-      <img id="modal-img" class="modal-content">
+  </header>
+
+  <!-- Intro Section -->
+  <section class="section portion">
+    <div class="section-container portion-container">
+      <h3>Introduction</h3>
+      <div class="split-section-container">
+
+        <!-- Column 1 -->
+        <div class="split-section">
+
+          <!-- Product Overview -->
+          <div class="subsection-container">
+            <p class="subsection-title">Product Overview</p>
+            <p>FieldVision is an internal enterprise application used by 1800+ field engineers to manage the tasks required to
+              service
+              a power plant.</p>
+            <p>Prior to service, field engineers perform a set of planning activities, as outlined in FieldVision, to ensure
+              service
+              goes smoothly.</p>
+            <p>Every quarter, key business stakeholders review the planning activities and adjust them according to proposed
+              changes
+              sent to them.</p>
+          </div>
+          <!-- end of Product Overvieew -->
+
+          <!-- Problem Statement -->
+          <div class="subsection-container">
+            <p class="subsection-title">Problem Statement</p>
+            <p>After finalizing the changes, our developers required 1 month of their limited bandwidth to properly implement them.</p>
+            <p>In that time, users either wait for FieldVision to update, or receive the updates manually and have to
+            remember to mark activities in FieldVision as complete post-update.</p>
+          </div>
+          <!-- end of Problem Statement -->
+
+          <!-- Goal Statement -->
+          <div class="subsection-container">
+            <p class="subsection-title">Goal</p>
+            <p>I was challenged to design a Planning Admin Tool that would allow key stakeholders to directly edit planning activity
+            data without the need of developers.</p>
+          </div>
+          <!-- end of Goal Statement -->
+        </div>
+        <!-- End of Column 1 -->
+
+        <!-- Column 2 -->
+        <div class="split-section">
+
+          <!-- My Role -->
+          <div class="subsection-container">
+            <p class="subsection-title">My Role</p>
+            <p>Sole UX Designer on feature</p>
+            <ul>
+              <li>user research</li>
+              <li>competitive analysis</li>
+              <li>wireframes and prototyping</li>
+              <li>user testing</li>
+              <li>dev-ready documentation</li>
+              <li>constant collaboration with dev and product teams</li>
+            </ul>
+          </div>
+          <!-- End of My Role -->
+
+          <!-- Timeline -->
+          <div class="subsection-container">
+            <p class="subsection-title">Timeline</p>
+            <p>4 sprints (~2 months) before Dev team was scheduled to start building.</p>
+          </div>
+          <!-- End of Timeline -->
+
+          <!-- Challenges and Limitations -->
+          <div class="subsection-container">
+            <p class="subsection-title">Challenges and Limitation</p>
+            <ul>
+              <li>Limited bandwidth and tight turnaround time.</li>
+              <li>Group “demo sessions” done in place of 1-on-1 usability testing to save time.</li>
+            </ul>
+          </div>
+          <!-- End of Challenges and Limitations -->
+        </div>
+        <!-- End of Column 2 -->
+      </div>
     </div>
-    <img src="./pat-images/1.webp" class="case-study-img" alt="">
-    <img src="./pat-images/2.webp" class="case-study-img" alt="">
-    <img src="./pat-images/3.webp" class="case-study-img" alt="">
-    <img src="./pat-images/4.webp" class="case-study-img" alt="">
-    <img src="./pat-images/5.webp" class="case-study-img" alt="">
-    <img src="./pat-images/6.webp" class="case-study-img" alt="">
-    <img src="./pat-images/7.webp" class="case-study-img" alt="">
   </section>
+  <!-- End of Intro Section -->
+
+  <!-- Discovery Section -->
+  <section class="section portion-colored">
+    <div class="section-container portion-container">
+      <h3>Discovery</h3>
+
+      <!-- Understanding the Current Process -->
+      <div class="subsection-container">
+        <p class="subsection-title">Understanding the Current Process</p>
+        <p>Before designing, I met with 4 key stakeholders to go over the existing process and the problems they encountered
+        with it.</p>
+        <p>Key findings included:</p>
+        <ul>
+          <li>Changes to activities were made by editing specific fields outlined in a “Master Planning Sheet” Excel file.</li>
+          <li>Keeping track of proposed changes was very manual, with stakeholders communicating through edits of Excel files sent
+          back and forth over multiple email threads.</li>
+        </ul>
+        <img src="./pat-images/mps.webp" alt="">
+      </div>
+      <!-- end of Understanding the Current Process -->
+
+      <!-- User Needs -->
+      <div class="subsection-container">
+        <p class="subsection-title">User Needs</p>
+        <p>Based on this user session, I determined the following key user needs:</p>
+        <ul>
+          <li>Simple revisions - Whatever solution I created needed to be as simple as editing an Excel file, otherwise users would
+          revert to previous Excel methods.</li>
+          <li>Visibility on revisions - Keeping changes in one centralized area would cut down on time navigating through different
+          Excel sheets and email threads.</li>
+        </ul>
+      </div>
+      <!-- End of User Needs -->
+
+      <!-- Competitive Analysis -->
+      <div class="subsection-container">
+        <p class="subsection-title">Competitive Analysis</p>
+        <p>The most common revision control tool I'd used was GitHub, so I thought if GitHub had figured out group revision control
+        for a complex codebase, I could leverage their solutions for our planning activities.</p>
+        <p>My key takeaways from GitHub were:</p>
+        <ul>
+          <li>GitHub allowed users to attribute each change with a “Commit message” for easier identification.</li>
+          <li>When users wanted to push changes, they would issue a “Pull Request” which let others review and approve their changes
+          and/or leave comments for everyone else to see.</li>
+        </ul>
+        <div class="split-image-container">
+          <img src="./pat-images/commit.png" alt="">
+          <img src="./pat-images/pr.png" alt="">
+        </div>
+      </div>
+      <!-- End of Competitive Analysis -->
+
+    </div>
+  </section>
+  <!-- End of Discovery Section -->
+
+  <!-- Design Process -->
+  <section class="section portion">
+    <div class="section-container portion-container">
+      <h3>Design Process</h3>
+
+      <!-- Sketches -->
+      <div class="subsection-container">
+        <p class="subsection-title">Sketches</p>
+        <p>Even though our product team and stakeholders only responded to high fidelity wireframes, I find starting with sketches
+        is the best way for me to generate ideas, uncover requirements, and make sure I fully understand the problem.</p>
+        <p>Through sketches, I distilled key actions, noted existing solutions we could leverage, and discovered I didn't fully
+        understand how changes affected ongoing services or how equipment codes were determined.</p>
+        <div class="split-image-container">
+          <img src="./pat-images/sketch1.png" alt="">
+          <img src="./pat-images/sketch2.png" alt="">
+        </div>
+      </div>
+      <!-- End of Sketches -->
+
+      <!-- Leveraging Existing Solution -->
+      <div class="subsection-container">
+        <p class="subsection-title">Leveraging Existing Solutions</p>
+        <p>Data tables and forms already existed in the application, so rather than create new ones, I took those components and
+        adjusted them for the Planning Admin Tool.</p>
+        <p>By reusing existing components, I saved time creating a whole new solution and vetting its feasibility with the
+        dev team.</p>
+        <div class="split-image-container">
+          <img src="./pat-images/original-table.png" alt="">
+          <img src="./pat-images/new-table.png" alt="">
+        </div>
+      </div>
+      <!-- End of Leveraging Existing Solutions -->
+
+    </div>
+  </section>
+  <!-- End of Design Process -->
+  
+  <!-- Feedback -->
+  <section class="section portion-colored">
+    <div class="section-container portion-container">
+      <h3>Feedback</h3>
+
+      <!-- Improving the Feedback Process -->
+      <div class="subsection-container">
+        <p class="subsection-title">Improving the Feedback Process</p>
+        <p>When I demoed my first iteration for feedback, I found two flaws in a group demo format:</p>
+        <ul>
+          <li>Because I was giving a demo instead of users exploring the solution, I wasn't able to truly test my solution's
+          usability.</li>
+          <li>Sometimes one loud voice dominates over the rest. It wasn't until the end of the demo that one stakeholder was able to
+          tell me that about a previously unknown Steam Power use case.</li>
+        </ul>
+        <img src="./pat-images/feedback.png" alt="" class="single-smaller-img">
+        <p>I spoke with my Product Manager and made the following changes to future feedback sessions:</p>
+        <ul>
+          <li>I shifted the format to be closer to usability tests — No more demos from me; users would be the ones
+          driving the call.</li>
+          <li>Demos needed to be split between Gas Power and Steam Power stakeholders so we could collect role-specific feedback.</li>
+        </ul>
+      </div>
+      <!-- End of Improving the Feedback Process -->
+
+      <!-- Usability Testing Results -->
+      <div class="subsection-container">
+        <p class="subsection-title">Usability Testing Results</p>
+        <p>Users pointed out that certain fields should be dropdowns or not editable at all, and also felt the arrangement of the
+        form's fields didn't match the proper hierarchy. So I fixed the incorrect fields and rearranged the form's layout based
+        on their feedback.</p>
+        <div class="split-image-container">
+          <img src="./pat-images/test1.png" alt="">
+          <img src="./pat-images/test2.png" alt="">
+        </div>
+        <p>On the Steam form, I had checkboxes for fields that were Yes/No values. Due to their proximity to dropdowns, users
+        thought the checkboxes were used to activate those dropdowns. I changed these checkboxes to dropdowns, which users felt
+        made more sense.</p>
+        <div class="split-image-container">
+          <img src="./pat-images/test3.png" alt="">
+          <img src="./pat-images/test4.png" alt="">
+        </div>
+      </div>
+      <!-- End of Usability Testing Results -->
+
+    </div>
+  </section>
+  <!-- End of Feedback -->
+
+  <!-- Features and Designs -->
+  <section class="section portion">
+    <div class="section-container portion-container">
+      <h3>Features and Designs</h3>
+
+      <!-- Planning Activity List Table -->
+      <div class="subsection-container">
+        <p class="subsection-title">Planning Activity List Table</p>
+        <p>The main challenge with the table was fitting 20+ columns of Excel data into a table meant to fit on one screen.
+        Additionally, while similar, the Gas and Steam Power attributes weren't quite one to one, so we needed two arrangements.</p>
+        <p>So for each business, I grouped previously individual attributes into single columns displaying multiple values.
+        To maintain some of Excel's flexibility, users could filter the table and/or change the way activities were grouped.</p>
+        <div class="split-image-container">
+          <img src="./pat-images/gastable.png" alt="">
+          <img src="./pat-images/steamtable.png" alt="">
+        </div>
+      </div>
+      <!-- End of Planning Activity List Table -->
+      
+      <!-- Edit Activity Forms -->
+      <div class="subsection-container">
+        <p class="subsection-title">Edit Activity Forms</p>
+        <p>From my competitive analysis, I took GitHub's commit view and replaced the file edit section with the Edit Activity Form. <br> For the form itself, I arranged the fields based on what I learned in my user feedback sessions.</p>
+
+        <div class="split-image-container">
+          <div class="split-image">
+            <figcaption>GitHub's Desktop Commit View</figcaption>
+            <img src="./pat-images/commit.png" alt="">
+          </div>
+          <div class="split-image">
+            <figcaption>Commit View Layout</figcaption>
+            <img src="./pat-images/commitlayout.png" alt="">
+          </div>
+          <div class="split-image">
+            <figcaption>Steam Power Edit Form</figcaption>
+            <img src="./pat-images/steamedit.png" alt="">
+          </div>
+          <div class="split-image">
+            <figcaption>Gas Power Edit Form</figcaption>
+            <img src="./pat-images/gasedit.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- End of Edit Activity Forms -->
+
+      <!-- What Didn't Make It -->
+      <div class="subsection-container">
+        <p class="subsection-title">What Didn't Make It</p>
+        <p>Below are some preliminary designs for features that weren't completed due to timing.</p>
+        <p>Stakeholders informed me equipment selection wasn't as straightforward as selecting from a list. However, they also told me that changing equipment was rare, so due to its complexity and low use we decided this could be a future enhancement.</p>
+        <img src="./pat-images/equipmentselect.png" alt="" class="single-smaller-img">
+        <p>I was also not able to design every aspect of version control in the given time. As valuable as version control would be to users' long-term needs, delivering the tool on time and giving stakeholders the ability to edit data was more important.</p>
+        <p>As such, full version control was moved to a future enhancement.</p>
+        <div class="split-image-container">
+          <img src="./pat-images/changerequests.png" alt="">
+          <img src="./pat-images/history.png" alt="">
+        </div>
+      </div>
+      <!-- End of What Didn't Make It -->
+
+    </div>
+  </section>
+  <!-- End of Features and Designs -->
+
+  <!-- Outcomes -->
+  <section class="section portion-colored">
+    <div class="section-container portion-container">
+      <h3>Outcomes</h3>
+      <div class="subsection-container">
+        <p class="subsection-title">Results</p>
+        <p>After development of MVP1, the tool reduced the turnaround time for quarterly changes from 1 month to almost immediate.</p>
+        <p>Development on MVP2 was passed onto another UX Designer as I shifted me to another product</p>
+      </div>
+
+      <div class="subsection-container">
+        <p class="subsection-title">Reflections</p>
+        <p>While user research can be more difficult to accomplish in enterprise settings, it still needs to be done, in whatever capacity.</p>
+        <p>I learned how valuable it was to leverage existing solutions to work quickly and gather proper user feedback.</p>
+        <p>It's also important to understand what truly needs to be delivered and what can be cut, especially in agile settings.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Outcomes -->
 
   <!-- footer -->
   <footer class="footer">
