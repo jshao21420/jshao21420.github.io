@@ -10,7 +10,7 @@ Case Study Page
 }
 
 .case-study-title {
-  max-width: 880px;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
 }
@@ -63,8 +63,12 @@ Case Study Page
   list-style-type: circle;
 }
 
-.single-smaller-img {
+.portion img,
+.portion-colored img {
   padding: 1rem 0rem;
+}
+
+.single-smaller-img {
   max-width: 620px;
   margin: auto;
 }
