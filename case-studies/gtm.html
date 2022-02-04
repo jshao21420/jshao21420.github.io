@@ -92,6 +92,10 @@
     </div>
   </header>
 
+  <div id="modal" class="modal">
+    <img id="modal-img" class="modal-content">
+  </div>
+
   <!-- Intro Section -->
   <section class="section portion">
     <div class="section-container portion-container">
@@ -181,7 +185,7 @@
         Market functionality.</p>
         <p>During this discussion, I created an information architecture diagram and process map outlining the intended wing to
         wing process.</p>
-        <img src="./gtm-images/ia.jpg" class="single-smaller-img" alt="">
+        <img src="./gtm-images/ia.jpg" class="single-smaller-img zoom-img" alt="">
         <img src="./gtm-images/bp-1.jpg" alt="">
       </div>
       <!-- end of Understanding the Business Process -->
@@ -192,8 +196,8 @@
         <p>After reviewing the business process, we went over the current solution as well as the different solutions the business proposed to improve the workflow.</p>
         <p>During UAT, users struggled to access their Events' Project after Event Setup because it was not in an obvious location. Users would have to scroll down on the left bar to find the link to their Project.</p>
         <div class="split-image-container">
-          <img src="./gtm-images/og-1.png" alt="">
-          <img src="./gtm-images/og-2.png" alt="">
+          <img src="./gtm-images/og-1.png" class="zoom-img" alt="">
+          <img src="./gtm-images/og-2.png" class="zoom-img" alt="">
         </div>
         <p>While it was clear that the link to Project should be more readily apparent, stakeholders were split on how to present Project tasks to the users.</p>
       </div>
@@ -204,8 +208,8 @@
         <p class="subsection-title">The “Split” Solution</p>
         <p>The first proposed solution was an iteration of the original, where the Project page would be accessed through a button off to the side of the Event page's tabs.</p>
         <div class="split-image-container">
-          <img src="./gtm-images/separate-1.png" alt="">
-          <img src="./gtm-images/separate-2.png" alt="">
+          <img src="./gtm-images/separate-1.png" class="zoom-img" alt="">
+          <img src="./gtm-images/separate-2.png" class="zoom-img" alt="">
         </div>
         <p>While this solution made sense from an information hierarchy perspective, there were concerns over the constant back-and-forth users would have to do between Event and Project pages.</p>
       </div>
@@ -215,10 +219,10 @@
       <div class="subsection-container">
         <p class="subsection-title">The "Combined" Solution</p>
         <p>The other proposed solution was to embed Project tasks as tabs within the Event page, mirroring the business process workflow. It also closely followed the workflow used in FSP, which some stakeholders believed users would be more familiar with.</p>
-        <img src="./gtm-images/together-1.png" alt="" class="single-smaller-img">
+        <img src="./gtm-images/together-1.png" class="single-smaller-img zoom-img" alt="">
         <p>While this solution streamlined the workflow, we were concerned that accessing Project tasks, which affect multiple Events, inside the tabset of a single Event would create cause confusion to users.</p>
         <p>Additionally, there were doubts that the intended business process was true to how users operated. Namely: how would users know what the Project's financials are if they hadn't built their Events' scopes yet?</p>
-        <img src="./gtm-images/bp-2.jpg" alt="">
+        <img src="./gtm-images/bp-2.jpg" class="zoom-img" alt="">
       </div>
       <!-- End of The "Combined" Solution -->
 
@@ -241,7 +245,7 @@
           <li>Do you ever need to go back and make adjustments to your POs?</li>
           <li>What are your thoughts on EventVision's current workflow/layout for Event and Project?</li>
         </ul>
-        <img src="./gtm-images/research-qs.png" alt="" class="single-smaller-img">
+        <img src="./gtm-images/research-qs.png" alt="" class="single-smaller-img zoom-img">
       </div>
       <!-- End of Research Questions -->
 
@@ -251,7 +255,7 @@
         <p>Our user group spanned 3 major poles: the Americas, Asia, and Europe, and 6 sub-regions: North America, Latin America, Europe, Asia and the Pacific Islands, Middle East and North Africa, and Sub-Saharan Africa.</p>
         <p>Ideally, we would have liked to have interviewed at least 1 user from each region, but certain regional stakeholders restricted us from speaking to their users.</p>
         <p>We were able to conduct 3 interviews to cover each of the major poles: 1 from North America, 1 from Europe, and 1 from Asia.</p>
-        <img src="./gtm-images/research-map.png" alt="">
+        <img src="./gtm-images/research-map.png" class="zoom-img" alt="">
       </div>
       <!-- End of User Interviews -->
 
@@ -281,9 +285,9 @@
         <p class="subsection-title">Research Impacts</p>
         <p>Through our interviews, we were able to validate the original business process, and confirm that users do issue POs before doing Scope or Cost.</p>
         <p>Based on this confirmation and the users' need to adjust POs in the middle of planning, we determined that accessing Project through a button off to the side, while an improvement on the original, was not ideal considering the frequent back-and-forth.</p>
-        <img src="./gtm-images/separate-3.png" alt="" class="single-smaller-img">
+        <img src="./gtm-images/separate-3.png" alt="" class="single-smaller-img zoom-img">
         <p>We also learned that users wished the workflow was driven more by Projects than Events, so we determined that consolidating the workflow within an Event was also not ideal.</p>
-        <img src="./gtm-images/together-2.png" alt="" class="single-smaller-img">
+        <img src="./gtm-images/together-2.png" alt="" class="single-smaller-img zoom-img">
       </div>
       <!-- End of Research Impacts -->
 
@@ -292,7 +296,7 @@
         <p class="subsection-title">Competitive Analysis</p>
         <p>Seeing as both proposed solutions were not ideal for users, we decided to look to our sister product, FieldVision and see how they were arranging their navigation.</p>
         <p>Their solution for navigation across different areas of the app was to use dropdown menu navigation.</p>
-        <img src="./gtm-images/fv.png" alt="">
+        <img src="./gtm-images/fv.png" class = "zoom-img" alt="">
         <p>In addition to being a solution to our problem, there were also plans to eventually merge FieldVision and EventVision together. As such, we decided that mirroring FieldVision's solution could be the ideal solution for both the short and long term.</p>
       </div>
       <!-- End of Competitive Analysis -->
@@ -303,11 +307,11 @@
         <p>Dropdown menu navigation would provide our users the division between Event and Project they needed, while also keeping the navigation between the two simpler and more flexible.</p>
         <p>We would also be able to easily combine our menus with FieldVision's menus whenever the two products to become one.</p>
         <div class="split-image-container">
-          <img src="./gtm-images/updated-1.png" alt="">
-          <img src="./gtm-images/updated-2.png" alt="">
+          <img src="./gtm-images/updated-1.png" class="zoom-img" alt="">
+          <img src="./gtm-images/updated-2.png" class="zoom-img" alt="">
         </div>
         <p>Additionally, we included a separate persistent dropdown to the right, which allows users to more easily navigate to any sister Event within their Project or Event.</p>
-        <img src="./gtm-images/updated-3.png" alt="" class="single-smaller-img">
+        <img src="./gtm-images/updated-3.png" alt="" class="single-smaller-img zoom-img">
       </div>
       <!-- End of Updated Solution -->
 
@@ -378,7 +382,7 @@
 
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/app.js"></script>
-  <script src="../js/modal.js"></script>
+  <script src="../js/new-modal.js"></script>
 </body>
 
 </html>
